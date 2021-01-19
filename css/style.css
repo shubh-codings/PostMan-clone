@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+
+
+body{
+    background: url(/img/blackOcean.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 18px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.height100{
+    height: 100%;
+}
+.width100{
+    width:100%;
+}
+.my-1{
+    margin: 5px 0;
+}
+.my-2{
+    margin: 10px 0;
+}
+fieldset{
+    margin-bottom: 10px;
+}
+input{
+    font-size: 20px;
+    margin: 0 10px;
+    outline: none;
+}
+textarea{
+    font-size: 20px;
+    outline: none;
+}
+label{
+    font-size: 20px;
+}
+.btn{
+    padding:0 5px;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+    outline: none;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    /* border-radius: 5px; */
+}
+
+/* Styling For the Individual Elements Start Here  */
+.navbar{
+    display: flex;
+    margin: 0;
+    padding: 0%;
+    background: rgb(80, 76, 76);
+    height: 40px;
+    justify-content: left;
+    color: white;
+    transition: 0.5 all ease-in-out;
+}
+.logo{
+    display: flex;
+    width: 200px;
+
+}
+.navbar .logo img{
+    padding:0 10px;
+    width: 50px;   
+}
+.logo a,img{
+    padding:0 5px;
+    color: white;
+    align-items: center;
+}
+.logo a:hover{
+    background: rgb(175, 162, 162);
+    color: aqua;
+}
+
+.navbar ul{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+}
+.navbar ul li a{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 0 10px;
+    height: 100%;
+    color: rgb(252, 250, 250);
+}
+.navbar ul li a:hover{
+    /* background: rgb(175, 162, 162); */
+    color: aqua;
+}
+.navbar ul li:hover{
+    background: rgb(175, 162, 162);
+    /* color: aqua; */
+}
+.toggleMenu{
+    display: none;
+    position: fixed;
+    top: 0%;
+    right: 50px;
+
+}
+.toggleMenu div {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(212, 195, 195);
+    margin: 6px 0;
+  }
+
+footer{
+    background: rgb(53, 49, 49);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+@media only screen and (max-width:720px){
+    section{
+        margin-top: 20px;
+    }
+    section h2{
+        margin-top: 50px;
+        font-size:15px ;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        background: none;
+        /* align-items: center; */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        /* height: 30vh; */
+        transition: 0.5 all;
+        
+    }
+    .navbar .logo img{
+        max-height: 45px;
+    }
+    #navMenu{
+        display: none;
+        flex-direction: column;
+        margin-top: 20px;
+        /* position: relative;
+        top: 0px;
+        left: 10px; */
+
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul li{
+        height: auto;
+        align-items: flex-start;
+    }
+   
+    .toggleMenu {
+        display: block;
+        
+    }
+
+    #time{padding: 0%;}
+} 

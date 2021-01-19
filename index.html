@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Man By OnEdge Developers</title>
+    <!-- Linking Styling For PostMan App  -->
+    <link rel="stylesheet" href="/css/prism.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+
+
+</head>
+
+<body>
+    <!-- Making The Navigation Menu With .navbar and #navbar for styling-->
+    <nav class="navbar" id="navbar">
+
+        <!-- Creating A div For Logo Of The Website -->
+        <div class="logo" id="logo">
+
+            <a class="" href="./index.html"><img class="height100 flex-row" src="/img/OnEdge.png"
+                    alt="OnEdge Logo"></a>
+            <!--adding the imagefile here-->
+
+            <a class="height100" href="/index.html">OnEdge</a>
+            
+            <!--Header of The Website-->
+        </div>
+
+        <!-- Creating a Menu For Navbar  -->
+        <div id="navMenu">
+
+            <ul  class="height100 flex-row">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="toggleMenu" id="toggleMenu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <!-- <div id="logoHead">
+        <a class="flex-row " href="./index.html"><img class="flex-row" src="./OnEdge.png"
+            alt="OnEdge Logo"></a> -->
+        <!-- <a class="flex-row height100" href="./index.html">OnEdge</a> 
+
+    </div>-->
+    <!-- Making The Main Container For Input And Output of Request & Response -->
+    
+    <!-- Creating A Section to include all the element -->
+    <section class="flex-col">
+        <h2>Welcome To Post Man By OnEdge Developers </h2>
+        <!-- Adding A Empty Div Element here to Populate Time With The help of JavaScript  -->
+        <div class="time height100 flex-row" id="time"></div>
+        <!--Heading-->
+            <div class="container postForm" id="postForm">
+                <!--Division to add Input form -->
+            <form>
+                <!--To Provide the URL-->
+                <div id="urlDiv" class="urlDiv width100 flex-row">
+                    <label for="url">URL=></label>
+                    <input class="width100" type="text" name="url" id="url" placeholder="Enter Your URL">
+                </div>
+                <fieldset name="requestType">
+                    <!--To Know The Request type Adding Radio Buttons-->
+                    <legend>Request Type</legend>
+                    <div>
+                        <input type="radio" name="requestType" id="get" value="GET">
+                        <label for="get">GET</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="requestType" id="post" value="POST">
+                        <label for="post">POST</label>
+                    </div>
+                </fieldset>
+                <fieldset name="contentType">
+                    <!--To Know The Content Type adding Radio Buttons -->
+                    <legend>Response Type</legend>
+                    <div>
+                        <input type="radio" name="contentType" id="json" value="JSON">
+                        <label for="json">JSON</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="contentType" id="custom" value="Custom">
+                        <label for="custom">CUSTOM</label>
+                    </div>
+                </fieldset>
+                <!-- If Content Type Is JSON Then To Provide JSON input Adding Div -->
+                <div class="jsonBox" id="jsonBox">
+                    <label class="label" for="jsonText">Enter Your JSON</label>
+                    <textarea class="width100 my-1" type="text" name="jsonText" id="jsonText"
+                        placeholder="Enter Your JSON Here" rows="6"></textarea>
+
+                </div>
+
+                <!-- If Content Type Is Custom Then To Provide Custom input Adding A Parameter Div -->
+                <div class="width100 my-2 flex-col parameterBox" id="parametersBox">
+                    <div class="my-1 width100 paramGrid">
+                        <label class="label" for="parameterKey1">Parameter1</label>
+                        <input class="width100" type="text" name="key1" id="parameterKey1"
+                            placeholder="Key">
+                        <input class="width100" type="text" name="value1" placeholder="Value" id="parameterValue1">
+                        <input class="btn" id="addParamBtn" type="button" value="Add">
+                    </div>
+                    <div class="width100 parameters" id="parameters"></div>
+                </div>
+                <button type="submit" id="requestSubmit" class="btn"> Submit</button>
+                <!--Adding the Submit Button-->
+            </form>
+        </div>
+        </div>
+        <!-- Creating A Container To Show Response  -->
+        <div class="container responseBox" id="responseBox">
+            <h3>Your Response</h3>
+            <!-- Box to be shown With Response   -->
+            <pre class="language-javascript">
+                <code class="language-javascript responsePrism" id = "responsePrism">
+
+                </code>
+            </pre>
+
+        </div>
+    </section>
+
+    <!-- Making The Footer Section -->
+    <footer class="footer" id="footer">
+        <h5>Copyright &copy; 2021, All Right Reserved | OnEdge Developers</h5>
+    </footer>
+    <!-- Adding custom Scripting File  -->
+    <script src="/js/prism.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
